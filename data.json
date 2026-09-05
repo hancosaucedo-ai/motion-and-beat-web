@@ -1,0 +1,151 @@
+{
+  "paquetes": [
+    {
+      "title": "Paquete Básico Mensual",
+      "subtitle": "Motion & Beat",
+      "icon": "ri-play-circle-line",
+      "description": "El impulso esencial que tu marca necesita para mantener una comunicación activa y profesional en canales digitales.",
+      "price": 1400,
+      "price_unit": "/mes",
+      "image": "assets/paquete_basico_1788373926455.jpg",
+      "includes": [
+        "2 diseños de flyer",
+        "Desarrollo de guion estratégico",
+        "3 fotos en 2K",
+        "3 contenidos para RRSS en 2K",
+        "1 tanda de corrección"
+      ]
+    },
+    {
+      "title": "Video Suelto (Prueba Piloto)",
+      "subtitle": "Motion & Beat",
+      "icon": "ri-megaphone-line",
+      "description": "Prueba el poder del contenido audiovisual sin compromisos a largo plazo. Ideal para formatos de alto impacto.",
+      "price": 350,
+      "price_unit": "/video",
+      "image": "assets/paquete_video_1788374003503.jpg",
+      "includes": [
+        "1 Video corto optimizado para RRSS (hasta 2 min).",
+        "Desarrollo de guion estructurado y enfoque comercial.",
+        "Edición profesional: dinámicas y audio.",
+        "Asesoría remota para la grabación."
+      ]
+    },
+    {
+      "title": "Producción Audiovisual",
+      "subtitle": "Motion & Beat",
+      "icon": "ri-film-line",
+      "description": "Cobertura y postproducción profesional diseñada para capturar la esencia, estética y dinamismo de tu empresa.",
+      "price": 1250,
+      "price_unit": "/proyecto",
+      "image": "assets/paquete_audiovisual_1788374016625.jpg",
+      "includes": [
+        "Producción técnica (grabación de video y audio).",
+        "Dirección de escenas, planos recurso y tomas.",
+        "Postproducción avanzada (color, efectos).",
+        "Formatos adaptados (horizontal/vertical).",
+        "3 ensayos con coreógrafo."
+      ]
+    },
+    {
+      "title": "Manejo de Redes",
+      "subtitle": "Motion & Beat",
+      "icon": "ri-share-line",
+      "description": "Administración estratégica enfocada en construir una comunidad sólida y mejorar el engagement.",
+      "price": 1100,
+      "price_unit": "/mes",
+      "image": "assets/paquete_redes_1788374030117.jpg",
+      "includes": [
+        "Estrategia de contenidos y calendarización mensual.",
+        "Gestión de publicaciones en RRSS",
+        "Atención y respuesta estética a comentarios.",
+        "Reporte mensual de rendimiento y métricas"
+      ]
+    },
+    {
+      "title": "Consultoría Estratégica",
+      "subtitle": "Motion & Beat",
+      "icon": "ri-lightbulb-line",
+      "description": "Sesión de análisis profundo para identificar oportunidades y trazar una ruta hacia tus objetivos.",
+      "price": 500,
+      "price_unit": "/sesión",
+      "image": "assets/paquete_consultoria_1788374043013.jpg",
+      "includes": [
+        "Sesión individual de consultoría via Zoom/Google",
+        "Inspección material y análisis empresarial",
+        "Proyección y propuesta objetiva",
+        "Estudio estratégico local",
+        "Reestructuración estética"
+      ]
+    },
+    {
+      "title": "Paquete Completo",
+      "subtitle": "Motion & Beat",
+      "icon": "ri-star-smile-line",
+      "description": "Consolida toda la potencia audiovisual y estratégica de nuestra agencia en un solo flujo de trabajo.",
+      "price": 3500,
+      "price_unit": "/mes",
+      "image": "assets/paquete_completo_1788374080957.jpg",
+      "includes": [
+        "7 diseños de flyers y guion estratégico",
+        "10 fotos en 4k y 10 contenidos para RRSS 4k",
+        "4 tantas de corrección",
+        "Manejo y capacitación de RRSS",
+        "Model/ Talent"
+      ]
+    },
+    {
+      "title": "Cobertura Apex",
+      "subtitle": "Motion & Beat",
+      "icon": "ri-camera-lens-line",
+      "description": "Exclusivamente para clientes que desean inmortalizar su evento con el más alto estándar visual.",
+      "price": 350,
+      "price_unit": "/evento",
+      "image": "assets/paquete_apex_1788374120842.jpg",
+      "includes": [
+        "Cobertura con equipo de filmación y fotografía.",
+        "Captura de los momentos clave",
+        "Sesión de fotos express a los Pasantes y directiva",
+        "Postproducción y Edición Pro.",
+        "Entrega de 3 Video Resumen y fotografías (Fast Delivery)"
+      ]
+    }
+  ],
+  "trabajos": [
+    {
+      "title": "Amazonas",
+      "image": "assets/logo_amazonas.jpg",
+      "description": "Descripción de lo que se hizo en Amazonas. Aquí el cliente podrá añadir más detalles y reemplazar este texto.",
+      "media_src": "assets/amazonas_video.mp4",
+      "tiktok_link": "https://vt.tiktok.com/ZSqL8oCHr/"
+    },
+    {
+      "title": "Agencia Loop",
+      "image": "assets/logo_loop.jpg",
+      "description": "Estrategia de posicionamiento de marca, diseño de identidad visual y campaña de Ads enfocada en conversión de clientes B2B. Aumento del 45% en leads calificados en 3 meses.",
+      "media_src": "assets/agencia_loop.png",
+      "tiktok_link": "https://vt.tiktok.com/ZSqL8gsxh/"
+    },
+    {
+      "title": "Brasas del Inca",
+      "image": "assets/logo_brasas.jpg",
+      "description": "Gestión integral de redes sociales, fotografía gastronómica y campañas de marketing local. Incremento del tráfico al restaurante y reservas online en un 60%.",
+      "media_src": "assets/brasas_del_inca.png",
+      "tiktok_link": "https://vt.tiktok.com/ZSqL8mobQ/"
+    },
+    {
+      "title": "Discoteca K de Oro",
+      "image": "assets/logo_k_de_oro.jpg",
+      "description": "Producción audiovisual para eventos, gestión de comunidad en TikTok e Instagram, y campañas de expectativa que resultaron en sold-out en 5 eventos consecutivos.",
+      "media_src": "assets/discoteca_k_de_oro.png",
+      "tiktok_link": ""
+    },
+    {
+      "title": "New Moon",
+      "image": "assets/logo_new_moon.jpg",
+      "description": "Creación de tienda online (E-commerce), catálogo digital de productos y pauta digital (Facebook & Instagram Ads) logrando un ROI del 300% en la primera campaña de lanzamiento.",
+      "media_src": "assets/new_moon.png",
+      "tiktok_link": "https://vt.tiktok.com/ZSqL8GBLa/"
+    }
+  ]
+}

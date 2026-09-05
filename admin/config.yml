@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main 
+
+media_folder: "assets" 
+public_folder: "assets" 
+
+collections:
+  - name: "contenido"
+    label: "Contenido de la Página"
+    files:
+      - file: "data.json"
+        label: "Datos Principales"
+        name: "datos_principales"
+        fields:
+          - label: "Paquetes (Servicios)"
+            name: "paquetes"
+            widget: "list"
+            summary: '{{fields.title}}'
+            fields:
+              - {label: "Nombre del Paquete", name: "title", widget: "string"}
+              - {label: "Subtítulo", name: "subtitle", widget: "string", default: "Motion & Beat"}
+              - {label: "Ícono (Clase de Remix Icon)", name: "icon", widget: "string", default: "ri-star-smile-line"}
+              - {label: "Descripción Breve", name: "description", widget: "text"}
+              - {label: "Precio", name: "price", widget: "number"}
+              - {label: "Unidad de Precio", name: "price_unit", widget: "string", default: "/mes"}
+              - {label: "Imagen del Paquete", name: "image", widget: "image"}
+              - label: "¿Qué incluye?"
+                name: "includes"
+                widget: "list"
+                field: {label: "Elemento", name: "item", widget: "string"}
+          
+          - label: "Trabajos Realizados (Portafolio)"
+            name: "trabajos"
+            widget: "list"
+            summary: '{{fields.title}}'
+            fields:
+              - {label: "Nombre del Trabajo / Empresa", name: "title", widget: "string"}
+              - {label: "Logo de la Empresa (Imagen Principal)", name: "image", widget: "image"}
+              - {label: "Descripción del Proyecto (Lo que hicimos)", name: "description", widget: "text"}
+              - {label: "URL de Video", name: "media_src", widget: "string", required: false}
+              - {label: "Enlace de Red Social", name: "tiktok_link", widget: "string", required: false}

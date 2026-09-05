@@ -5,38 +5,57 @@ backend:
 media_folder: "assets" 
 public_folder: "assets" 
 
+locale: "es"
+
 collections:
   - name: "contenido"
-    label: "Contenido de la Página"
+    label: "Panel de tu Página Web"
+    description: "Aquí puedes agregar, quitar o modificar todo el contenido de tu web."
     files:
       - file: "data.json"
-        label: "Datos Principales"
+        label: "Gestión de Contenido"
         name: "datos_principales"
         fields:
-          - label: "Paquetes (Servicios)"
+          - label: "📦 PAQUETES (TUS SERVICIOS)"
             name: "paquetes"
             widget: "list"
-            summary: '{{fields.title}}'
+            summary: 'Paquete: {{fields.title}} - {{fields.price}} Bs'
+            hint: "Agrega nuevos paquetes, edítalos o bórralos. Todo se actualizará en la web automáticamente."
             fields:
-              - {label: "Nombre del Paquete", name: "title", widget: "string"}
-              - {label: "Subtítulo", name: "subtitle", widget: "string", default: "Motion & Beat"}
-              - {label: "Ícono (Clase de Remix Icon)", name: "icon", widget: "string", default: "ri-star-smile-line"}
-              - {label: "Descripción Breve", name: "description", widget: "text"}
-              - {label: "Precio", name: "price", widget: "number"}
-              - {label: "Unidad de Precio", name: "price_unit", widget: "string", default: "/mes"}
-              - {label: "Imagen del Paquete", name: "image", widget: "image"}
-              - label: "¿Qué incluye?"
+              - {label: "Nombre del Paquete", name: "title", widget: "string", hint: "Ej: Paquete Básico Mensual"}
+              - {label: "Subtítulo (Opcional)", name: "subtitle", widget: "string", default: "Motion & Beat"}
+              - label: "Ícono Decorativo"
+                name: "icon"
+                widget: "select"
+                hint: "Elige el ícono que acompañará a este paquete en la página web."
+                options:
+                  - {label: "📷 Cámara", value: "ri-camera-lens-line"}
+                  - {label: "▶️ Botón de Play", value: "ri-play-circle-line"}
+                  - {label: "📢 Megáfono", value: "ri-megaphone-line"}
+                  - {label: "🎬 Película / Audiovisual", value: "ri-film-line"}
+                  - {label: "🔗 Compartir / Redes Sociales", value: "ri-share-line"}
+                  - {label: "💡 Idea / Foco", value: "ri-lightbulb-line"}
+                  - {label: "⭐ Estrella", value: "ri-star-smile-line"}
+                  - {label: "🚀 Cohete", value: "ri-rocket-line"}
+                  - {label: "🔥 Fuego", value: "ri-fire-line"}
+              - {label: "Descripción Breve", name: "description", widget: "text", hint: "Un resumen de lo que soluciona o para quién es este paquete."}
+              - {label: "Precio (Solo números)", name: "price", widget: "number", hint: "Ej: 1400"}
+              - {label: "Unidad del Precio", name: "price_unit", widget: "string", default: "/mes", hint: "Ej: /mes, /video, /proyecto"}
+              - {label: "Imagen de Fondo", name: "image", widget: "image", hint: "Sube la foto que se verá de fondo en la tarjeta del paquete."}
+              - label: "Lista: ¿Qué incluye este paquete?"
                 name: "includes"
                 widget: "list"
-                field: {label: "Elemento", name: "item", widget: "string"}
+                hint: "Añade cada beneficio de uno en uno."
+                field: {label: "Beneficio", name: "item", widget: "string"}
           
-          - label: "Trabajos Realizados (Portafolio)"
+          - label: "💼 TRABAJOS REALIZADOS (PORTAFOLIO)"
             name: "trabajos"
             widget: "list"
-            summary: '{{fields.title}}'
+            summary: 'Empresa: {{fields.title}}'
+            hint: "Sube los logos de las empresas, una pequeña descripción de lo que se logró y su video."
             fields:
-              - {label: "Nombre del Trabajo / Empresa", name: "title", widget: "string"}
-              - {label: "Logo de la Empresa (Imagen Principal)", name: "image", widget: "image"}
-              - {label: "Descripción del Proyecto (Lo que hicimos)", name: "description", widget: "text"}
-              - {label: "URL de Video", name: "media_src", widget: "string", required: false}
-              - {label: "Enlace de Red Social", name: "tiktok_link", widget: "string", required: false}
+              - {label: "Nombre de la Empresa / Marca", name: "title", widget: "string", hint: "Ej: Amazonas, Brasas del Inca"}
+              - {label: "Logo de la Empresa", name: "image", widget: "image", hint: "Sube el logo aquí. Se verá en el carrusel de la página."}
+              - {label: "Descripción de los Resultados", name: "description", widget: "text", hint: "Explica brevemente qué trabajo se hizo y los resultados logrados para esta marca."}
+              - {label: "Enlace del Video en Redes Sociales (Opcional pero Recomendado)", name: "tiktok_link", widget: "string", required: false, hint: "Pega aquí el enlace de TikTok o Instagram del video (Ej: https://vt.tiktok.com/...)"}
+              - {label: "Subir Video Local (Solo si no hay link de redes)", name: "media_src", widget: "file", required: false, hint: "Si tienes el video en MP4 y prefieres subirlo directamente a la web en lugar de poner un link de TikTok, súbelo aquí."}
